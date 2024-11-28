@@ -1,0 +1,123 @@
+body {
+    padding-top: 50px;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.content-section {
+    padding: 50px 15px;
+    text-align: center;
+}
+
+.carousel-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    height: 100%; /* Ensures it occupies the full height of the carousel */
+    text-align: center; /* Centers the text */
+}
+
+/* Styling for the text */
+.carousel-text {
+    margin-top: 10px; /* Space between the image and the text */
+}
+
+.carousel-inner {
+    height: 500px; /* Set height for the carousel (adjust as needed) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    height: 100%; /* Ensures it occupies the full height of the carousel */
+    text-align: center; 
+}
+
+.carousel-inner > .item > img {
+    height: 500px;
+    width: 450px;
+}
+
+.glyphicon-star {
+    color: yellow;
+   text-shadow:0 0  black,0 0  black,0 0  black,0 0  black,0 0  black;
+ }
+
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    height: calc(100vh - 60px); /* Ensures it fits below the header */
+}
+
+#sidebar {
+    width: 25%;
+    max-width: 300px;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+    /* height: 100%;*/
+}
+
+#map {
+    flex: 1;
+    height: 100%; /* Fills the remaining height below the header */
+}
+
+#dealers-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: white; /* Entire list background is white */
+    border: 1px solid #ddd; /* Optional: Add a border around the entire list */
+}
+
+#dealers-list li {
+    padding: 1rem; /* Space around the text */
+    background-color: white; /* Individual items are white by default */
+    border-bottom: 1px solid #ddd; /* Separator between items */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    white-space: nowrap; /* Prevent text from wrapping */
+    /*text-overflow: ellipsis;*/ /* Add ellipsis for overflowed text */
+    overflow: auto; /* Ensure text stays within bounds */
+}
+
+#dealers-list li:last-child {
+    border-bottom: none; /* Remove separator for the last item */
+}
+
+#dealers-list li:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+    cursor: pointer; /* Changes cursor to pointer */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+}
+
+
