@@ -132,7 +132,18 @@ footer {
     padding: 20px 0;
 }
 
-.spec-box, .feature-box {
+.spec-box {
+    text-align: center;
+    background: white; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    min-height: 100px; 
+    box-sizing: border-box; 
+}
+
+.feature-box {
     text-align: center;
     margin-bottom: 20px;
     padding: 20px; 
@@ -144,8 +155,6 @@ footer {
     min-height: 100px; 
     box-sizing: border-box; 
 }
-
-
 
 .spec-box h4 {
     margin-top: 10px;
