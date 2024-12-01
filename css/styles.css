@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* @media(max-width:1200px){
+    .specs .container{
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    .spec-box1, .spec-box2, .spec-box3 {
+        min-width: 80%;
+        padding: 60px;
+    }
+} */
 
+*{
+    font-family: 'Poppins', sans-serif;
+}
 
 body {
     padding-top: 50px;
-    font-family: 'Poppins', sans-serif;
+    
 }
 
 .jumbotron {
@@ -71,6 +85,41 @@ header {
 .hero .container {
     position: relative;
     z-index: 2; /* Ensure text is above the overlay*/ 
+}
+
+.section .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    flex-grow: 1;
+    min-width: 150px;
+    /* padding: 0 40px; */
+}
+
+/* .specs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+} */
+
+.specs .container {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    /* flex-grow: 1; */
+    padding: 10px 40px;
+}
+
+.spec-box1, .spec-box2, .spec-box3 {
+    width: 21em;
+    height: 14em;
+    background-color: #fff;
+    box-shadow: 5px 5px 25px #0000005f;
+    padding: 10px 30px;
+    border-radius: 10px;
 }
 
 main {
