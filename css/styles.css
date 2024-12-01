@@ -106,11 +106,24 @@ header {
 .specs .container {
     /* height: 100vh; */
     display: flex;
+    flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
-    gap: 3em;
+    gap: 20px;
     /* flex-grow: 1; */
     padding: 10px 40px;
+}
+
+.specs .container > div {
+    flex: 1; /* Makes the flex items take up equal space */
+    min-width: 250px; /* Ensures a minimum width for each box */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .specs .container {
+        flex-direction: column; /* Stacks the divs vertically */
+    }
 }
 
 .spec-box1, .spec-box2, .spec-box3 {
