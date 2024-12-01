@@ -1,15 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-/* @media(max-width:1200px){
-    .specs .container{
-        height: 100%;
-        flex-direction: column;
-    }
-    
-    .spec-box1, .spec-box2, .spec-box3 {
-        min-width: 80%;
-        padding: 60px;
-    }
-} */
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -22,6 +11,17 @@ body {
 
 .jumbotron {
     margin-bottom: 0;
+}
+
+.btn-link {
+    padding: 0;
+}
+
+.btn-link:focus, .btn-link:active {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
 }
 
 .content-section {
