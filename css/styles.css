@@ -15,6 +15,7 @@ body {
 
 .btn-link {
     padding: 0;
+    color: #fff;
 }
 
 .btn-link:focus, .btn-link:active {
@@ -22,6 +23,7 @@ body {
     box-shadow: none;
     border: none;
     text-decoration: none;
+    color: #fff;
 }
 
 .content-section {
@@ -117,42 +119,65 @@ header {
     /* padding: 0 40px; */
 }
 
-/* .specs{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-} */
-
-.specs .container {
-    /* height: 100vh; */
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    /* flex-grow: 1; */
-    padding: 10px 40px;
+.specs {
+    background-color: #f9f9f9; /* Optional: Background for the specs section */
+    padding: 20px 0;
 }
 
-.specs .container > div {
-    flex: 1; /* Makes the flex items take up equal space */
-    min-width: 250px; /* Ensures a minimum width for each box */
+.specs .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center-align cards horizontally */
+}
+
+.spec-box {
+    background-color: #fff; /* Card background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Card shadow */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    text-align: center; /* Center-align text */
+    flex: 1 1 300px; /* Flexible card width with a minimum width */
+    max-width: 300px; /* Max card width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spec-box img.spec-image {
+    max-width: 100%; /* Ensure the image scales within the card */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space below the image */
+    border-radius: 8px; /* Optional: Rounded corners for the image */
+}
+
+.spec-box h4 {
+    margin: 10px 0; /* Space around the heading */
+    font-size: 1.2em; /* Adjust font size */
+}
+
+.spec-box p {
+    font-size: 1em; /* Paragraph font size */
+    color: #555; /* Text color */
+    margin: 0;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .specs .container {
-        flex-direction: column; /* Stacks the divs vertically */
+        /* flex-direction: column;  */
+        justify-content: center; 
     }
 }
 
-.spec-box1, .spec-box2, .spec-box3 {
+/* .spec-box1, .spec-box2, .spec-box3 {
     width: 21em;
     height: 14em;
     background-color: #fff;
     box-shadow: 5px 5px 25px #0000005f;
     padding: 10px 30px;
     border-radius: 10px;
-}
+} */
 
 .features .container {
     display: flex;
@@ -185,59 +210,28 @@ main {
     height: calc(100vh - 60px); /* Ensures it fits below the header */
 }
 
-#sidebar {
-    width: 25%;
-    max-width: 300px;
-    background-color: #f4f4f4;
-    padding: 2rem;
-    overflow-y: auto;
-    border-right: 1px solid #ddd;
-    /* height: 100%;*/
-}
-
-#map {
-    flex: 1;
-    height: 100%; /* Fills the remaining height below the header */
-}
-
-#dealers-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: white; /* Entire list background is white */
-    border: 1px solid #ddd; /* Optional: Add a border around the entire list */
-}
-
-#dealers-list li {
-    padding: 1rem; /* Space around the text */
-    background-color: white; /* Individual items are white by default */
-    border-bottom: 1px solid #ddd; /* Separator between items */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
-    white-space: nowrap; /* Prevent text from wrapping */
-    /*text-overflow: ellipsis;*/ /* Add ellipsis for overflowed text */
-    overflow: auto; /* Ensure text stays within bounds */
-}
-
-#dealers-list li:last-child {
-    border-bottom: none; /* Remove separator for the last item */
-}
-
-#dealers-list li:hover {
-    background-color: #f0f0f0; /* Light gray background on hover */
-    cursor: pointer; /* Changes cursor to pointer */
-}
 
 footer {
     text-align: center;
     /* padding: 1rem; */
     /* background-color: #f4f4f4; */
     border-top: 1px solid #ddd;
-
-    background: #f8f8f8;
+    color: white;
+    background: #004890;
     padding: 20px 0;
 }
 
-.spec-box {
+footer a {
+    color: #fff; /* Replace with your desired color */
+    text-decoration: none; /* Optional: Remove underline */
+    transition: color 0.3s ease; /* Optional: Smooth color transition */
+}
+
+footer button {
+    color: #fff;
+}
+
+/* .spec-box {
     text-align: center;
     background: white; 
     border-radius: 5px; 
@@ -246,7 +240,7 @@ footer {
     border: 1px solid #ddd;
     min-height: 100px; 
     box-sizing: border-box; 
-}
+} */
 
 .feature-box {
     text-align: center;
@@ -261,6 +255,6 @@ footer {
     box-sizing: border-box; 
 }
 
-.spec-box h4 {
+/* .spec-box h4 {
     margin-top: 10px;
-}
+} */
