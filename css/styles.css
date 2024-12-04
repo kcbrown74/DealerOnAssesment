@@ -4,8 +4,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+  padding-top: 50px; /* Add top padding to avoid navbar overlap */
+  height: 100vh; /* Example height, adjust as needed */
+}
+
 body {
-    padding-top: 50px;
     
 }
 
@@ -53,17 +61,38 @@ body {
       }
     }
   }
- 
+  
 
  body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    padding-top: 50px;
+    position: relative; /* For scrollspy */
+    background-color: #F1F1F1;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
+
+.navbar-inverse {
+    background-color: #F1F1F1;
+}
+
+.navbar-brand {
+    padding:0;
+
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: #004890;
+    color: #fff !important; 
+}
+
+.navbar-nav li a {
+    color: black !important; 
+  }
 
 header {
     background-color: #2b2b2b;
@@ -72,6 +101,11 @@ header {
     text-align: center;
     height: 60px;
     flex-shrink: 0;
+}
+
+.text-center{
+    border-top:0;
+    padding-top: 10px;
 }
 
 .hero {
@@ -105,7 +139,7 @@ header {
 
 .hero .container {
     position: relative;
-    z-index: 2; /* Ensure text is above the overlay*/ 
+    z-index: 2; 
 }
 
 .section .container {
@@ -119,71 +153,69 @@ header {
     /* padding: 0 40px; */
 }
 
+
 .specs {
-    background-color: #f9f9f9; /* Optional: Background for the specs section */
-    padding: 20px 0;
+    padding-top: 10px;
+}
+
+.features, .gallery {
+    background-color: #F1F1F1;
+    padding-top: 5px;
 }
 
 .specs .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Space between cards */
-    justify-content: center; /* Center-align cards horizontally */
+    gap: 20px; 
+    justify-content: center; 
 }
 
 .spec-box {
-    background-color: #fff; /* Card background */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Card shadow */
-    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
     padding: 20px;
-    text-align: center; /* Center-align text */
-    flex: 1 1 300px; /* Flexible card width with a minimum width */
-    max-width: 300px; /* Max card width */
+    text-align: center; 
+    flex: 1 1 300px; 
+    max-width: 300px; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .spec-box img.spec-image {
-    max-width: 100%; /* Ensure the image scales within the card */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 15px; /* Space below the image */
-    border-radius: 8px; /* Optional: Rounded corners for the image */
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 15px; 
+    border-radius: 8px; 
 }
 
 .spec-box h4 {
-    margin: 10px 0; /* Space around the heading */
-    font-size: 1.2em; /* Adjust font size */
+    margin: 10px 0; 
+    font-size: 1.2em;
 }
 
 .spec-box p {
-    font-size: 1em; /* Paragraph font size */
-    color: #555; /* Text color */
+    font-size: 1em; 
+    color: #555; 
     margin: 0;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .specs .container {
-        /* flex-direction: column;  */
+        display: flex;
+        flex-direction: column;
         justify-content: center; 
+        align-items: center;    
     }
 }
 
-/* .spec-box1, .spec-box2, .spec-box3 {
-    width: 21em;
-    height: 14em;
-    background-color: #fff;
-    box-shadow: 5px 5px 25px #0000005f;
-    padding: 10px 30px;
-    border-radius: 10px;
-} */
-
 .features .container {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping of flex items */
-    gap: 20px; /* Adds spacing between the flex items */
-    justify-content: center; /* Centers the items horizontally */
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
     align-items: flex-start; /* Aligns items at the start vertically */
 }
 
@@ -231,17 +263,6 @@ footer button {
     color: #fff;
 }
 
-/* .spec-box {
-    text-align: center;
-    background: white; 
-    border-radius: 5px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    min-height: 100px; 
-    box-sizing: border-box; 
-} */
-
 .feature-box {
     text-align: center;
     margin-bottom: 20px;
@@ -254,7 +275,3 @@ footer button {
     min-height: 100px; 
     box-sizing: border-box; 
 }
-
-/* .spec-box h4 {
-    margin-top: 10px;
-} */
