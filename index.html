@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 Subaru Crosstrek - Charlotte, NC</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+
+    <style>
+        .carousel-inner > .item > img {
+            width:640px;
+            height:360px;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top"> 
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="./images/subaru-logo.png">
+
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#specs">Specifications</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<div class="hero">
+    <div class="container">
+        <h1>2024 Subaru Crosstrek</h1>
+        <p>Charlotte, NC</p>
+        <h4>4.39 
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star"></i>
+            <i class="glyphicon glyphicon-star half"></i> (74 Reviews)</h4>
+        <h2>MSRP: $28,245</h2>
+        <p>MPG: 29 City | 35 Highway</p>
+        <a href="/searchnew.html" class="btn btn-primary btn-lg">Search Available Inventory</a>
+    </div>
+</div>
+
+<!-- Specs Section -->
+
+<section id="specs" class="container-fluid specs">
+<div class="specs">
+    <div class="container">
+        <div class="spec-box spec-box1">
+            <img src="./images/crosstrek9.jpg" alt="Extra Power" class="spec-image">
+            <h4>Extra Power, Capability, and Fun</h4>
+            <p>The 2024 Crosstrek features a newly available 2.5-liter SUBARU BOXER engine delivering 182 horsepower.</p>
+        </div>
+        <div class="spec-box spec-box2">
+            <img src="./images/crosstrek11.jpg" alt="Sporty Exterior Design" class="spec-image">
+            <h4>Sporty Exterior Design</h4>
+            <p>Aggressively styled grille, gunmetal finish accents, and exclusive dark gray wheels.</p>
+        </div>
+        <div class="spec-box spec-box3">
+            <img src="./images/crosstrek5.jpg" alt="Comfortable and Modern Interior" class="spec-image">
+            <h4>Comfortable and Modern Interior</h4>
+            <p>Adventure-ready StarTex® upholstery with yellow contrast stitching and durable materials.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="container-fluid features">
+<div class="features">
+    <h2 class="text-center">Safe, Convenient, and Entertaining</h2>
+    <div class="container">
+        
+            <div class="feature-box1">
+                <img src="./images/crosstrek8.jpg" alt="STARLINK Multimedia" class="img-responsive feature-image">
+                <h4>STARLINK Multimedia</h4>
+                <p>Includes Apple CarPlay®, Android Auto™, and hands-free smartphone operation.</p>
+            </div>
+            <div class="feature-box2">
+                <img src="./images/crosstrek4.jpg" alt="Touchscreen and Navigation" class="img-responsive feature-image">
+                <h4>8-inch Touchscreen and Navigation</h4>
+                <p>Access apps, news, music, and more with voice-activated TomTom® navigation.</p>
+            </div>
+    </div>
+</div>
+</section>
+
+<div class="contactContainer">
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="contactModalLabel">Contact Us</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="gallery" class="container-fluid gallery">
+<div class="gallery">
+    <h2 class="text-center">Gallery</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+        </ol>
+    
+        <div class="carousel-inner">
+        <div class="item active">
+            <img src="./images/crosstrek.png" alt="Image 1" style="width: 100%; height: auto;">
+        </div>
+    
+        <div class="item">
+            <img src="./images/crosstrek1.jpg" alt="Image 2" style="width: 100%; height: auto;">
+        </div>
+
+        <div class="item">
+            <img src="./images/crosstrek2.png" alt="Image 3" style="width: 100%; height: auto;">
+        </div>
+    
+        <div class="item">
+            <img src="./images/crosstrek3.jpg" alt="Image 4" style="width: 100%; height: auto;">
+        </div>
+
+        <div class="item">
+            <img src="./images/crosstrek6.jpg" alt="Image 5" style="width: 100%; height: auto;">
+        </div>
+
+        <div class="item">
+            <img src="./images/crosstrek7.jpg" alt="Image 6" style="width: 100%; height: auto;">
+        </div>
+
+        <div class="item">
+            <img src="./images/crosstrek10.jpg" alt="Image 7" style="width: 100%; height: auto;">
+        </div>
+        </div>
+    
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<footer>
+    <div class="container text-center">
+        <p>Sales: <a href="tel:5558775434">555-877-5434</a> | Service: <a href="tel:5558775435">555-877-5435</a> |     
+            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#contactModal">
+                Contact Us
+            </button></p>
+        <p><a href="/hours.aspx">1326 SE Enterprise, Charlotte, NC 28204</a></p>
+    </div>
+</footer>
+
+<script>
+    // Initialize tooltip component
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    
+    // Initialize popover component
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
