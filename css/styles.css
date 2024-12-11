@@ -110,7 +110,7 @@ header {
 
 .hero {
     position: relative;
-    background: url('/images/crosstrek2.jpg') no-repeat center center;
+    background: url('/images/heroimage.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     text-align: center;
